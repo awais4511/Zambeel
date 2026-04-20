@@ -1,0 +1,111 @@
+/* Footer — 4-column layout, dark blue background */
+.footer {
+    width: 100%;
+    background: #002D73;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px 30px 40px;
+    gap: 30px;
+}
+
+/* Each column */
+.footer-box {
+    min-width: 160px;
+    max-width: 260px;
+    flex: 1 1 160px;
+}
+
+.footer-box h3 {
+    color: #F0CB07;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Social icons row */
+.footer-social {
+    display: flex;
+    gap: 16px;
+    font-size: 24px;
+    color: white;
+}
+
+.footer-social i:hover {
+    color: #F0CB07;
+    cursor: pointer;
+}
+
+/* Support & Career links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links li {
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 1.5;
+    transition: color 0.2s;
+}
+
+.footer-links li:hover {
+    color: #F0CB07;
+    text-decoration: underline;
+}
+
+/* Address text */
+.footer-powered {
+    color: rgba(255,255,255,0.75);
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.footer-company {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.footer-address {
+    color: rgba(255,255,255,0.7);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* ── Tablet ──────────────────────────────── */
+@media (max-width: 1024px) {
+    .footer {
+        padding: 40px 20px 30px;
+        gap: 24px;
+    }
+}
+
+/* ── Mobile ──────────────────────────────── */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .footer-box {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .footer-box h3 {
+        font-size: 15px;
+    }
+}

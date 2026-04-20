@@ -1,0 +1,60 @@
+/* Hero section — text on top, map image below with low opacity */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    color: #002D73;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 24px;
+}
+
+.hero-image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+}
+
+.hero-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.35;
+}
+
+/* Country highlight colours */
+.uae  { color: #006612; }
+.sa   { color: #FF0000; }
+.k    { color: #006612; }
+.q    { color: #006612; }
+
+/* ── Tablet ──────────────────────────────── */
+@media (max-width: 1024px) {
+    .hero-text {
+        font-size: 28px;
+    }
+}
+
+/* ── Mobile ──────────────────────────────── */
+@media (max-width: 768px) {
+    .hero {
+        padding: 24px 16px 0;
+    }
+
+    .hero-text {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}

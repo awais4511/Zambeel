@@ -1,0 +1,71 @@
+/* Service icons row */
+.finace {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+}
+
+/* Each service card */
+.finace > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    width: 120px;
+    gap: 8px;
+}
+
+.finace > div img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.h1, .h2, .h3, .h4, .h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #002D73;
+    margin: 0;
+}
+
+/* ── Tablet ──────────────────────────────── */
+@media (max-width: 1024px) {
+    .finace {
+        gap: 20px;
+        padding: 24px 16px;
+    }
+
+    .finace > div {
+        width: 100px;
+    }
+
+    .h1, .h2, .h3, .h4, .h5 {
+        font-size: 14px;
+    }
+}
+
+/* ── Mobile ──────────────────────────────── */
+@media (max-width: 768px) {
+    .finace {
+        gap: 16px;
+        padding: 20px 12px;
+        justify-content: space-around;
+    }
+
+    .finace > div {
+        width: 80px;
+    }
+
+    .finace > div img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .h1, .h2, .h3, .h4, .h5 {
+        font-size: 12px;
+    }
+}

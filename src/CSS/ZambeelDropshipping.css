@@ -1,0 +1,355 @@
+.zambeeldropshipping{
+    height: 50vh;
+    width: 100%;
+    background: #E1E823;
+    text-align: center;
+    padding: 20px;
+}
+.zambeeldropshipping h1{
+    color: #002D73;
+    font-size: 40px;
+    font-weight: 700;
+}
+.zambeeldrop-para{
+    margin-top: 20px;
+    font-size: 18px;
+
+}
+.zambeeldropshipping h5{
+    font-size: 18px;
+    margin-top: 8px;
+}
+.zambeel-para{
+    margin-top: 8px;
+    font-size: 18px;
+}
+.zambeeldropshipping button{
+margin-top: 50px;
+height: 50px;
+width: 180px;
+border-radius: 5px;
+color: #002D73;
+font-size: 18px;
+font-weight: 500;
+}
+.zambeeldropship-icon{
+    text-align: center;
+    padding: 30px;
+    color: #002D73;
+}
+.zambeeldropship-left{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    font-size: 40px;
+}
+.zambeeldropship-icon-left h4{
+    font-size: 20px;
+   
+}
+.zambeeldropship-icon-left i{
+    color: #E1E823;
+    margin-bottom: 20px;
+}
+.zambeeldropship-icon-left1 h4{
+    font-size: 20px;
+   
+}
+.zambeeldropship-icon-left1 i{
+    color: #E1E823;
+    margin-bottom: 20px;
+}
+.zambeeldropship-icon-left2 h4{
+    font-size: 20px;
+   
+}
+.zambeeldropship-icon-left2 i{ 
+    color: #E1E823;
+    margin-bottom: 20px;
+}
+.zambeeldropship-icon-left3 h4{
+    font-size: 20px;
+   
+}
+.zambeeldropship-icon-left3 i{
+    color: #E1E823;
+    margin-bottom: 20px;
+}
+.zambeeldropship-icon-left4 h4{
+    font-size: 20px;
+   
+}
+.zambeeldropship-icon-left4 i{
+    color: #E1E823;
+    margin-bottom: 20px;
+}
+.zambeeldropship-icon-left5 h4{
+    font-size: 20px;
+   
+}
+.zambeeldropship-icon-left5 i{ 
+    color: #E1E823;  
+    margin-bottom: 20px;
+}
+
+.scrolling {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background: gray;
+    color: white;
+
+  }
+  
+  .scrolling p {
+    display: inline-block;
+    font-size: 18px;
+    padding-left: 100%;
+    animation: scroll-left 15s linear infinite;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+.how-to-start-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #0a2f66;
+    margin-bottom: 50px;
+  }
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 50px 60px;
+  }
+  .step-box {
+    position: relative;
+    padding-left: 80px;
+  }
+  .step-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #fcd400; 
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 56px;
+    text-align: center;
+  }
+  .step-title {
+    margin: 0 0 8px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0a2f66;
+  }
+  .step-box p {
+    font-size: 15px;
+    color: #2b2b2b;
+    line-height: 1.6;
+    margin: 0;
+  }
+  .step-box a {
+    color: #0059c9;
+    text-decoration: underline;
+  }
+  .heading{
+    text-align: center;
+    color: #002D73;
+    font-size: 22px;
+  }
+
+ 
+ .zambeel-section {
+    display: flex;
+    align-items: center;
+    gap: 160px;
+    padding: 40px 20px;
+  }
+  
+  .zambeel-product h1 {
+    margin: 0 0 10px;
+    font-size: 28px;
+    color: #082567;
+  }
+  
+  .zambeel-product p {
+    margin: 0 0 20px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .zambeel-product button {
+    padding: 10px 20px;
+    background-color: #082567;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .zambeel-product button:hover {
+    background-color: #0059c9;
+  }
+  
+  .zambeel-section1 {
+    display: flex;
+    align-items: center;
+    gap: 160px;
+    padding: 40px 20px;
+  }
+  
+  .zambeel-product1 h1 {
+    margin: 0 0 10px;
+    font-size: 28px;
+    color: #082567;
+  }
+  
+  .zambeel-product1 p {
+    margin: 0 0 20px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .zambeel-product1 button {
+    padding: 10px 20px;
+    background-color: #082567;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .zambeel-product1 button:hover {
+    background-color: #0059c9;
+  }
+  .zambeel-product1 .no-re{
+    font-weight: 600;
+    font-size: 18px;
+  }
+  /* responsive */
+  @media (max-width: 1024px) {
+    .zambeel-section,
+    .zambeel-section1 {
+      gap: 80px;
+    }
+  
+    .zambeeldropshipping h1 {
+      font-size: 32px;
+    }
+  
+    .zambeel-product h1,
+    .zambeel-product1 h1 {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .zambeeldropshipping {
+      height: auto;
+      padding: 40px 15px;
+    }
+  
+    .zambeeldropshipping h1 {
+      font-size: 28px;
+    }
+  
+    .zambeeldrop-para,
+    .zambeeldropshipping h5,
+    .zambeel-para {
+      font-size: 16px;
+    }
+  
+    .zambeeldropshipping button {
+      width: 100%;
+      max-width: 220px;
+      font-size: 16px;
+    }
+  
+    .zambeeldropship-left {
+      flex-wrap: wrap;
+      gap: 30px;
+      font-size: 32px;
+    }
+  
+    .zambeel-section,
+    .zambeel-section1 {
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+    }
+  
+    .zambeel-section img,
+    .zambeel-section1 img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+  
+    .zambeel-product button,
+    .zambeel-product1 button {
+      width: 100%;
+      max-width: 200px;
+    }
+  
+    .steps-grid {
+      gap: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .zambeeldropshipping h1 {
+      font-size: 22px;
+    }
+  
+    .zambeeldrop-para,
+    .zambeeldropshipping h5,
+    .zambeel-para {
+      font-size: 14px;
+    }
+  
+    .zambeeldropshipping button {
+      font-size: 14px;
+      height: 44px;
+    }
+  
+    .zambeel-product h1,
+    .zambeel-product1 h1 {
+      font-size: 20px;
+    }
+  
+    .zambeel-product p,
+    .zambeel-product1 p {
+      font-size: 14px;
+    }
+  
+    .section-title {
+      font-size: 24px;
+    }
+  
+    .step-title {
+      font-size: 18px;
+    }
+  
+    .step-box p {
+      font-size: 14px;
+    }
+  }
+  
+  
+  
+  

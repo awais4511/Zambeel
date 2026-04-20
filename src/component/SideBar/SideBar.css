@@ -1,0 +1,117 @@
+/* SideBar: toggle button + panel are hidden by default (desktop) */
+.sidebar-toggle,
+.sidebar-panel,
+.sidebar-overlay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* Hamburger button */
+  .sidebar-toggle {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+    background: white;
+    border: none;
+    font-size: 24px;
+    color: #002d73;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+
+  /* Dark overlay behind sidebar */
+  .sidebar-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1050;
+  }
+
+  /* Slide-in panel */
+  .sidebar-panel {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 260px;
+    height: 100%;
+    background-color: #002d73;
+    color: white;
+    padding-top: 60px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1200;
+    box-shadow: 4px 0 16px rgba(0,0,0,0.3);
+    overflow-y: auto;
+  }
+
+  .sidebar-panel.open {
+    left: 0;
+  }
+
+  /* Close button */
+  .sidebar-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background 0.2s;
+  }
+  .sidebar-close:hover {
+    background: rgba(255,255,255,0.15);
+  }
+
+  /* Links list */
+  .sidebar-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sidebar-panel ul li {
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+  }
+
+  .sidebar-panel ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 15px 20px;
+    transition: background 0.2s;
+  }
+
+  .sidebar-panel ul li a:hover {
+    background-color: rgba(255,255,255,0.1);
+  }
+
+  /* Divider between nav links and auth links */
+  .sidebar-divider {
+    height: 1px;
+    background: rgba(255,255,255,0.3);
+    margin: 8px 0;
+    border: none !important;
+  }
+
+  /* Auth link styles */
+  .sidebar-login {
+    font-weight: 600 !important;
+  }
+
+  .sidebar-signup {
+    background-color: rgba(255,255,255,0.15) !important;
+    font-weight: 700 !important;
+    border-radius: 4px;
+    margin: 0 12px;
+  }
+}

@@ -1,0 +1,53 @@
+
+.zambeel360 {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #002b6b;
+    color: white;
+  }
+  
+  .zambeel360 h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color:#F6FE26 ;
+  }
+  
+  .zambeel360-para {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .no-re {
+    font-weight: bold;
+  }
+  
+  .zambeel360 button {
+    background-color: #00cc44;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  @media (max-width: 600px) {
+    .zambeel360 {
+      padding: 30px 10px;
+    }
+  
+    .zambeel360 h1 {
+      font-size: 24px;
+    }
+  
+    .zambeel360-para {
+      font-size: 16px;
+    }
+  
+    .zambeel360 button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  
+  
+  

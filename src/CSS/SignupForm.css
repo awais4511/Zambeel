@@ -1,0 +1,219 @@
+.signup-container {
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 20px;
+}
+  .signup-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.signup-form h1 {
+  text-align: center;
+  color: #002244;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.signup-form h2 {
+  color: #002244;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: normal;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+  font-size: 14px;
+}
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btn-next,
+.btn-submit {
+  background-color: #009688;
+  color: white;
+}
+
+.btn-back {
+  background-color: #666;
+  color: white;
+}
+.login-link {
+  display: inline-block;
+  justify-content: center;
+  padding: 4px 16px;
+  background-color: #002d73;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 18px; 
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.step-text {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.service-description {
+  color: #666;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.form-step {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px 0;
+}
+@media (max-width: 768px) {
+  .signup-form {
+    width: 100%;
+    padding: 15px; 
+  }
+
+  .signup-form h1 {
+    font-size: 20px;
+  }
+
+  .signup-form h2 {
+    font-size: 16px; 
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group select {
+    font-size: 12px; 
+  }
+
+  .button-group {
+    flex-direction: column; 
+    gap: 15px; 
+  }
+
+  button {
+    font-size: 12px; 
+    padding: 10px 20px; 
+  }
+
+  .login-link {
+    padding: 8px 20px; 
+    font-size: 12px; 
+  }
+
+  .step-text, .service-description {
+    font-size: 12px; 
+  }
+}
+
+@media (max-width: 1024px) {
+  .signup-form {
+    width: 90%; 
+  }
+
+  .signup-form h1 {
+    font-size: 22px; 
+  }
+
+  .signup-form h2 {
+    font-size: 17px; 
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group select {
+    font-size: 13px; 
+  }
+
+  .button-group {
+    gap: 12px; 
+  }
+
+  button {
+    font-size: 13px; 
+  }
+
+  .login-link {
+    padding: 6px 18px; 
+    font-size: 13px; 
+  }
+
+  .step-text, .service-description {
+    font-size: 13px; 
+  }
+}
+
+@media (min-width: 1025px) {
+  .signup-form {
+    width: 70%; 
+  }
+
+  .signup-form h1 {
+    font-size: 24px; 
+  }
+
+  .signup-form h2 {
+    font-size: 18px; 
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group select {
+    font-size: 14px; 
+  }
+
+  .button-group {
+    gap: 10px; 
+  }
+
+  button {
+    font-size: 14px; 
+  }
+
+  .login-link {
+    padding: 4px 16px; 
+    font-size: 14px; 
+  }
+
+  .step-text, .service-description {
+    font-size: 14px; 
+  }
+}

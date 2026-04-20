@@ -1,0 +1,44 @@
+
+<!-- saved from url=(0079)https://simplyotplogin.s3.ap-south-1.amazonaws.com/simply-otp-login-script.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   <script src="./uuid.min.js.download"></script>
+   <script>
+
+      function getCookie(name) {
+         const nameEQ = name + "=";
+         const ca = document.cookie.split(';');
+         for (let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) === ' ') c = c.substring(1);
+            if (c.indexOf(nameEQ) === 0) return decodeURIComponent(c.substring(nameEQ.length, c.length));
+         }
+         return null;
+      }
+
+      function setCookie(name, value, time = 30 * 24 * 60 * 60) {
+         const date = new Date();
+         date.setTime(date.getTime() + (time * 1000));
+         const expires = "expires=" + date.toUTCString();
+         document.cookie = `${name}=${encodeURIComponent(value)};Secure; SameSite=None;expires=${expires};path=/;`;
+      }
+
+      const deviceId = getCookie('__sotp_browser_device_id');
+      console.log("deviceId", deviceId)
+      if (!deviceId) {
+         const footprint = uuid.v4();
+         setCookie('__sotp_browser_device_id', footprint)
+      }
+
+      const footprint = getCookie('__sotp_browser_device_id');
+
+      parent.postMessage({ type: 'footprint', value: footprint }, '*');
+
+      window.addEventListener('message', (event) => {
+         if (event.data.type === 'sendFootprint') {
+            parent.postMessage({ type: 'footprint', value: footprint }, '*');
+         }
+      });
+   </script>
+</head>
+
+<body></body></html>

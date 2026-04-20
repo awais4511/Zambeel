@@ -1,0 +1,166 @@
+.individualservices {
+    height: auto;
+    width: 100%;
+    background: #002D73;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .individualservices h1 {
+    color: #E1E823;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  
+  .individual-para {
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .individual-para .no-re {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .individualservice-para {
+    margin-top: 8px;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .individualservices button {
+    margin-top: 50px;
+    height: 50px;
+    width: 180px;
+    border-radius: 5px;
+    background: #E1E823;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .individual-section {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+    padding: 40px 20px;
+    margin-left: 30px;
+  }
+  
+  .individual-product h1 {
+    margin: 0 0 10px;
+    font-size: 28px;
+    color: #082567;
+  }
+  
+  .individual-product h1:hover {
+    text-decoration: underline;
+  }
+  
+  .individual-product p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .individual-product button {
+    padding: 10px 20px;
+    background-color: #082567;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .individual-product button:hover {
+    background-color: #0059c9;
+  }
+  
+  .individual-product .no-re {
+    font-weight: 200;
+    font-size: 15px;
+  }
+  
+  .individual-product ul li {
+    margin: 10px 0;
+  }
+  
+  @media (max-width: 1024px) {
+    .individualservices h1 {
+      font-size: 32px;
+    }
+  
+    .individual-section {
+      gap: 100px;
+    }
+  
+    .individual-product h1 {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .individualservices h1 {
+      font-size: 28px;
+    }
+  
+    .individual-para,
+    .individualservice-para {
+      font-size: 16px;
+    }
+  
+    .individualservices button {
+      width: 100%;
+      max-width: 220px;
+      font-size: 16px;
+    }
+  
+    .individual-section {
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+    }
+  
+    .individual-section img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+  
+    .individual-product button {
+      width: 100%;
+      max-width: 200px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .individualservices h1 {
+      font-size: 22px;
+    }
+  
+    .individual-para,
+    .individualservice-para,
+    .individual-para .no-re {
+      font-size: 14px;
+    }
+  
+    .individualservices button {
+      font-size: 14px;
+      height: 44px;
+    }
+  
+    .individual-product h1 {
+      font-size: 20px;
+    }
+  
+    .individual-product p {
+      font-size: 14px;
+    }
+  
+    .individual-product .no-re {
+      font-size: 13px;
+    }
+  }
+  
