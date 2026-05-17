@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import '../CSS/individualservices.css'
+import '../CSS/IndividualServices.css'
 import new_image from '../assets/new_image.webp'
 import source_image from '../assets/source_image.webp'
 import zambeel_container from '../assets/zambeel_container.webp'
